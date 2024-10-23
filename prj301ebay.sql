@@ -61,14 +61,14 @@ create table ProductType (
 GO
 
 create table Product (
-	product_id			smallint identity(1,1) not null primary key,
+	product_id		smallint identity(1,1) not null primary key,
 	product_name		nvarchar(500) not null,
 	product_description	nvarchar(2000) null,
 	product_price		money not null,
-    product_limit		smallint not null,
+    	product_limit		smallint not null,
 	product_status		bit not null,
 	product_rate		tinyint null,
-	discount_price	tinyint not null,
+	discount_price		tinyint not null,
 	product_img_url		varchar(400) not null,
 	product_type_id		tinyint not null foreign key references ProductType(product_type_id)
 );
@@ -97,8 +97,8 @@ create table Staff (
 GO
 
 create table Voucher (
-	voucher_id		tinyint identity(1,1) not null primary key,
-	voucher_name		nvarchar(200) not null,
+	voucher_id			tinyint identity(1,1) not null primary key,
+	voucher_name			nvarchar(200) not null,
 	voucher_code			char(16) not null,
 	voucher_discount_percent	tinyint not null,
 	voucher_quantity		tinyint not null,
@@ -142,7 +142,7 @@ create table Account (
 	account_email		nvarchar(500) not null,
 	account_password	char(32) not null,
 	account_type		varchar(20) not null,
-	lastime_order 	datetime null
+	lastime_order 		datetime null
 );
 
 GO
@@ -157,9 +157,9 @@ GO
 create table CartItem (
 	cart_item_id		int identity(1,1) not null primary key,
 	cart_id			int not null foreign key references Cart(cart_id),
-	product_id			smallint not null foreign key references Product(product_id),
+	product_id		smallint not null foreign key references Product(product_id),
 	product_price		money not null,
-	product_quantity		tinyint not null
+	product_quantity	tinyint not null
 );
 
 GO
