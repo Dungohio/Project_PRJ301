@@ -518,7 +518,7 @@ INSERT INTO Product (product_id, product_name, product_description, product_pric
 (6, 'Staedtler Colored Pencils Set of 24', 'A vibrant set of colored pencils for art and design.', 12.99, 200, 1, 4.7, 12, ' https://m.media-amazon.com/images/I/71FkuGmJFKL._AC_SL1500_.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(66, 'A4 Ring Binder Folder', 'A durable ring binder for organizing documents.', 6.99, 300, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
+(6, 'A4 Ring Binder Folder', 'A durable ring binder for organizing documents.', 6.99, 300, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
 (6, 'Sharpie Fine Point Permanent Marker', 'A versatile permanent marker for labeling and creative projects.', 1.99, 500, 1, 4.8, 5, ' https://pos.nvncdn.com/0d884c-53121/ps/20220422_HLOLMUGw9YlJInuqYgLVQney.jpg '),
