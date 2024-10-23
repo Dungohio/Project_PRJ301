@@ -474,66 +474,66 @@ VALUES (4, N'Canh Chua','Canh Chua là một món canh truyền thống của Vi
  -- Toys 
 
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(1, 'LEGO Star Wars Millennium Falcon', 'An iconic LEGO model of the Millennium Falcon spaceship.', 149.99, 50, 1, 4.9, 10, ' https://khodochoitreem.com/80088-large_default/lego-75295-millennium-falcon-microfighter-tank-60068.jpg '), 
+(5, 'LEGO Star Wars Millennium Falcon', 'An iconic LEGO model of the Millennium Falcon spaceship.', 149.99, 50, 1, 4.9, 10, ' https://khodochoitreem.com/80088-large_default/lego-75295-millennium-falcon-microfighter-tank-60068.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(2, 'Hot Wheels Super Track', 'An exciting racetrack for Hot Wheels cars.', 29.99, 100, 1, 4.7, 15, ' https://images-na.ssl-images-amazon.com/images/I/81j3hfLNcJL.jpg '), 
+(5, 'Hot Wheels Super Track', 'An exciting racetrack for Hot Wheels cars.', 29.99, 100, 1, 4.7, 15, ' https://images-na.ssl-images-amazon.com/images/I/81j3hfLNcJL.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(3, 'Barbie Dreamhouse', 'A luxurious three-story Barbie house with many accessories.', 199.99, 20, 1, 4.8, 20, ' https://m.media-amazon.com/images/I/71PpuvUNQ4L._AC_SL1500_.jpg '),
+(5, 'Barbie Dreamhouse', 'A luxurious three-story Barbie house with many accessories.', 199.99, 20, 1, 4.8, 20, ' https://m.media-amazon.com/images/I/71PpuvUNQ4L._AC_SL1500_.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(4, 'Nerf Elite Blaster', 'A high-performance Nerf blaster for action-packed play.', 39.99, 80, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/71ePN1TIO2L.jpg '),
+(5, 'Nerf Elite Blaster', 'A high-performance Nerf blaster for action-packed play.', 39.99, 80, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/71ePN1TIO2L.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
 (5, 'Play-Doh Ultimate Fun Factory', 'A fun and creative Play-Doh set with multiple molds and tools.', 14.99, 150, 1, 4.4, 5, ' https://m.media-amazon.com/images/I/81FzW2lwtmS._AC_SL1500_.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(6, 'Fisher-Price Laugh & Learn Puppy', 'Interactive puppy that teaches numbers and letters.', 19.99, 100, 1, 4.6, 10, ' https://images-na.ssl-images-amazon.com/images/I/71M9jsP2KTL.jpg '), 
+(5, 'Fisher-Price Laugh & Learn Puppy', 'Interactive puppy that teaches numbers and letters.', 19.99, 100, 1, 4.6, 10, ' https://images-na.ssl-images-amazon.com/images/I/71M9jsP2KTL.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(7, 'Puzzle 1000 Pieces - Nature Scenes', 'A challenging 1000-piece puzzle featuring beautiful nature landscapes.', 9.99, 200, 1, 4.7, 15, ‘https://m.media-amazon.com/images/I/81YahRl9CyL._AC_SL1500_.jpg '), 
+(5, 'Puzzle 1000 Pieces - Nature Scenes', 'A challenging 1000-piece puzzle featuring beautiful nature landscapes.', 9.99, 200, 1, 4.7, 15, ‘https://m.media-amazon.com/images/I/81YahRl9CyL._AC_SL1500_.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(8, 'Transformers Optimus Prime Action Figure', 'A detailed action figure of Optimus Prime that can transform.', 24.99, 60, 1, 4.5, 10, ' https://m.media-amazon.com/images/I/71uRENNFM4L._AC_SL1500_.jpg '),
+(5, 'Transformers Optimus Prime Action Figure', 'A detailed action figure of Optimus Prime that can transform.', 24.99, 60, 1, 4.5, 10, ' https://m.media-amazon.com/images/I/71uRENNFM4L._AC_SL1500_.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(9, 'Monopoly Classic Board Game', 'A timeless board game of buying, selling, and trading properties.', 19.99, 100, 1, 4.8, 12, ' https://images-na.ssl-images-amazon.com/images/I/61qODZoJc5L.jpg '),
+(5, 'Monopoly Classic Board Game', 'A timeless board game of buying, selling, and trading properties.', 19.99, 100, 1, 4.8, 12, ' https://images-na.ssl-images-amazon.com/images/I/61qODZoJc5L.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(10, 'UNO Card Game', 'A classic family card game that’s easy to learn and fun to play.', 7.99, 300, 1, 4.9, 5, ' https://m.media-amazon.com/images/I/81o2DARcdHL._AC_SL1500_.jpg '); 
+(5, 'UNO Card Game', 'A classic family card game that’s easy to learn and fun to play.', 7.99, 300, 1, 4.9, 5, ' https://m.media-amazon.com/images/I/81o2DARcdHL._AC_SL1500_.jpg '); 
 
 -- Stationery 
  
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(1, 'Moleskine Classic Notebook', 'A high-quality, durable notebook perfect for journaling.', 19.99, 150, 1, 4.8, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
+(6, 'Moleskine Classic Notebook', 'A high-quality, durable notebook perfect for journaling.', 19.99, 150, 1, 4.8, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
-(2, 'Pilot G2 Gel Pen', 'A smooth-writing gel pen with a comfortable grip.', 2.99, 500, 1, 4.7, 5, ' https://images-na.ssl-images-amazon.com/images/I/7165rkMde2L.jpg '), 
+(6, 'Pilot G2 Gel Pen', 'A smooth-writing gel pen with a comfortable grip.', 2.99, 500, 1, 4.7, 5, ' https://images-na.ssl-images-amazon.com/images/I/7165rkMde2L.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(3, 'Sticky Notes 3x3 Pack', 'A colorful pack of sticky notes perfect for reminders and notes.', 4.99, 400, 1, 4.6, 8, ' https://m.media-amazon.com/images/I/51gMy464JaL._AC_SL1250_.jpg '),
+(6, 'Sticky Notes 3x3 Pack', 'A colorful pack of sticky notes perfect for reminders and notes.', 4.99, 400, 1, 4.6, 8, ' https://m.media-amazon.com/images/I/51gMy464JaL._AC_SL1250_.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(4, 'Staedtler Colored Pencils Set of 24', 'A vibrant set of colored pencils for art and design.', 12.99, 200, 1, 4.7, 12, ' https://m.media-amazon.com/images/I/71FkuGmJFKL._AC_SL1500_.jpg '), 
+(6, 'Staedtler Colored Pencils Set of 24', 'A vibrant set of colored pencils for art and design.', 12.99, 200, 1, 4.7, 12, ' https://m.media-amazon.com/images/I/71FkuGmJFKL._AC_SL1500_.jpg '), 
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(5, 'A4 Ring Binder Folder', 'A durable ring binder for organizing documents.', 6.99, 300, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
+(66, 'A4 Ring Binder Folder', 'A durable ring binder for organizing documents.', 6.99, 300, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
 (6, 'Sharpie Fine Point Permanent Marker', 'A versatile permanent marker for labeling and creative projects.', 1.99, 500, 1, 4.8, 5, ' https://pos.nvncdn.com/0d884c-53121/ps/20220422_HLOLMUGw9YlJInuqYgLVQney.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(7, 'Elmer\'s Glue-All Multi-Purpose Glue', 'A reliable multi-purpose glue for crafts and projects.', 3.49, 250, 1, 4.6, 8, ' https://images-na.ssl-images-amazon.com/images/I/61q+x3tD8WL.jpg '),
+(6, 'Elmer\'s Glue-All Multi-Purpose Glue', 'A reliable multi-purpose glue for crafts and projects.', 3.49, 250, 1, 4.6, 8, ' https://images-na.ssl-images-amazon.com/images/I/61q+x3tD8WL.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(8, 'Scotch Magic Tape Dispenser', 'An easy-to-use tape dispenser for office and home use.', 5.99, 150, 1, 4.7, 10, ' https://m.media-amazon.com/images/I/71Y2em1MtzL._AC_SL1500_.jpg '),
+(6, 'Scotch Magic Tape Dispenser', 'An easy-to-use tape dispenser for office and home use.', 5.99, 150, 1, 4.7, 10, ' https://m.media-amazon.com/images/I/71Y2em1MtzL._AC_SL1500_.jpg '),
 	
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(9, 'Post-it Flag Highlighter', 'A highlighter with built-in Post-it flags for easy marking.', 3.99, 300, 1, 4.7, 8, ' https://m.media-amazon.com/images/I/71dAFbnucmL._AC_SL1500_.jpg '),
+(6, 'Post-it Flag Highlighter', 'A highlighter with built-in Post-it flags for easy marking.', 3.99, 300, 1, 4.7, 8, ' https://m.media-amazon.com/images/I/71dAFbnucmL._AC_SL1500_.jpg '),
 
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
-(10, 'Faber-Castell Eraser Pencil', 'An eraser in pencil form for precise erasing.', 1.49, 400, 1, 4.6, 5, ' https://m.media-amazon.com/images/I/712rTU0O-iL._AC_SL1500_.jpg '); 
+(6, 'Faber-Castell Eraser Pencil', 'An eraser in pencil form for precise erasing.', 1.49, 400, 1, 4.6, 5, ' https://m.media-amazon.com/images/I/712rTU0O-iL._AC_SL1500_.jpg '); 
 	
 
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url)VALUES
