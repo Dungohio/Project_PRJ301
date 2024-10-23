@@ -356,7 +356,7 @@ insert into ProductType (product_type) values (N'Bag & Backpack');
 insert into ProductType (product_type) values (N'Shoes');
 insert into ProductType (product_type) values (N'Jewelry & Accessory');
 insert into ProductType (product_type) values (N'P & A');
-insert into ProductType (product_type) values (N'Baby');
+insert into ProductType (product_type) values (N'Toys');
 insert into ProductType (product_type) values (N'Stationery');
 insert into ProductType (product_type) values (N'Health & Beauty');
 insert into ProductType (product_type) values (N'Clothing');
