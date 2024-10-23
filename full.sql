@@ -4,19 +4,19 @@ GO
 /*******************************************************************************
    Drop database if it exists
 ********************************************************************************/
-IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'ffood')
+IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'prj301ebay')
 BEGIN
-	ALTER DATABASE ffood SET OFFLINE WITH ROLLBACK IMMEDIATE;
-	ALTER DATABASE ffood SET ONLINE;
-	DROP DATABASE ffood;
+	ALTER DATABASE prj301ebay SET OFFLINE WITH ROLLBACK IMMEDIATE;
+	ALTER DATABASE prj301ebay SET ONLINE;
+	DROP DATABASE prj301ebay;
 END
 
 GO
 
-CREATE DATABASE ffood
+CREATE DATABASE prj301ebay
 GO
 
-USE ffood
+USE prj301ebay
 GO
 
 /*******************************************************************************
@@ -48,29 +48,29 @@ WHERE  TABLE_TYPE = 'BASE TABLE'
 Exec Sp_executesql @sql2 
 GO 
 
---use ffood database
-use ffood;
+--use prj301ebay database
+use prj301ebay;
 GO
 
 -- Create 16 tables
-create table FoodType (
-	food_type_id	tinyint identity(1,1) not null primary key,
-	food_type		nvarchar(20) not null
+create table ProductType (
+	product_type_id	tinyint identity(1,1) not null primary key,
+	product_type		nvarchar(20) not null
 );
 
 GO
 
-create table Food (
-	food_id			smallint identity(1,1) not null primary key,
-	food_name		nvarchar(500) not null,
-	food_description	nvarchar(2000) null,
-	food_price		money not null,
-        food_limit		smallint not null,
-	food_status		bit not null,
-	food_rate		tinyint null,
-	discount_percent	tinyint not null,
-	food_img_url		varchar(400) not null,
-	food_type_id		tinyint not null foreign key references FoodType(food_type_id)
+create table Product (
+	product_id			smallint identity(1,1) not null primary key,
+	product_name		nvarchar(500) not null,
+	product_description	nvarchar(2000) null,
+	product_price		money not null,
+    product_limit		smallint not null,
+	product_status		bit not null,
+	product_rate		tinyint null,
+	discount_price	tinyint not null,
+	product_img_url		varchar(400) not null,
+	product_type_id		tinyint not null foreign key references ProductType(product_type_id)
 );
 
 GO
@@ -82,9 +82,9 @@ create table [Admin] (
 
 GO
 
-create table AdminFood (
+create table AdminProduct (
 	admin_id		tinyint not null foreign key references [Admin](admin_id),
-	food_id			smallint not null foreign key references Food(food_id)
+	product_id			smallint not null foreign key references Product(product_id)
 );
 
 GO
@@ -157,9 +157,9 @@ GO
 create table CartItem (
 	cart_item_id		int identity(1,1) not null primary key,
 	cart_id			int not null foreign key references Cart(cart_id),
-	food_id			smallint not null foreign key references Food(food_id),
-	food_price		money not null,
-	food_quantity		tinyint not null
+	product_id			smallint not null foreign key references Product(product_id),
+	product_price		money not null,
+	product_quantity		tinyint not null
 );
 
 GO
@@ -220,35 +220,35 @@ create table OrderLog (
 
 GO
 
---Use ffood database
-USE ffood
+--Use prj301ebay database
+USE prj301ebay
 GO
 
---Set status of food = 0 if limit = 0
-CREATE TRIGGER tr_UpdateFoodStatus
-ON Food
+--Set status of product = 0 if limit = 0
+CREATE TRIGGER tr_UpdateProductStatus
+ON Product
 AFTER UPDATE
 AS
 BEGIN
-    IF UPDATE(food_limit)
+    IF UPDATE(product_limit)
     BEGIN
-        UPDATE Food
-        SET food_status = 0
-        WHERE food_limit = 0;
+        UPDATE Product
+        SET product_status = 0
+        WHERE product_limit = 0;
     END
 END;
 
 GO
 
--- Inactivate food when delete
-CREATE TRIGGER tr_InactivateFood
-ON Food
+-- Inactivate product when delete
+CREATE TRIGGER tr_InactivateProduct
+ON Product
 INSTEAD OF DELETE
 AS
 BEGIN
-    UPDATE Food
-    SET food_status = 0
-    WHERE food_id IN (SELECT food_id FROM deleted);
+    UPDATE Product
+    SET product_status = 0
+    WHERE product_id IN (SELECT product_id FROM deleted);
 END;
 
 GO
@@ -283,37 +283,32 @@ END
 
 GO
 
---Use ffood database
+--Use prj301ebay database
 use ffood;
 
 -- Insert Admin records
-insert into [Admin] (admin_fullname) values (N'Nguyễn Vũ Như Huỳnh');
-insert into [Admin] (admin_fullname) values (N'Nguyễn Hoàng Khang');
-insert into [Admin] (admin_fullname) values (N'Huỳnh Khắc Huy');
-insert into [Admin] (admin_fullname) values (N'Hứa Tiến Thành');
-insert into [Admin] (admin_fullname) values (N'Nguyễn Quốc Anh');
-insert into [Admin] (admin_fullname) values (N'Huỳnh Duy Khang');
+insert into [Admin] (admin_fullname) values (N'Vũ Hoàng Minh');
+insert into [Admin] (admin_fullname) values (N'Nguyễn Hoàng Dũng');
+insert into [Admin] (admin_fullname) values (N'Ngô Đức Huy');
+insert into [Admin] (admin_fullname) values (N'Nguyễn Mậu Hiếu');
 
 -- Insert Account records for Admins
--- Admin passwords are 'admin#' where # ranges from 1 to 6
+-- Admin passwords are 'admin#' where # ranges from 1 to 4
 -- Hash the passwords using MD5 algorithm
--- Admin passwords = 123456
+-- Admin passwords = 1234
 -- Admin account ID starts from 1-20
 
-INSERT INTO Account (admin_id, account_username, account_email, account_password, account_type) VALUES (1, N'vuhuynh123', N'huynhnvnce170550@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
-insert into Account (admin_id, account_username, account_email, account_password, account_type) values (2, N'hoangkhang123', N'khangnhce171197@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
-insert into Account (admin_id, account_username, account_email, account_password, account_type) values (3, N'khachuy123', N'huyhkce171229@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
-insert into Account (admin_id, account_username, account_email, account_password, account_type) values (4, N'tienthanh123', N'thanhhtce171454@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
-insert into Account (admin_id, account_username, account_email, account_password, account_type) values (5, N'quocanh1130', N'anhnqce170483@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
-insert into Account (admin_id, account_username, account_email, account_password, account_type) values (6, N'duykhang123', N'khanghdse172647@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
+INSERT INTO Account (admin_id, account_username, account_email, account_password, account_type) VALUES (1, N'hoangminh123', N'minhvhhe186900@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
+insert into Account (admin_id, account_username, account_email, account_password, account_type) values (2, N'hoangdung123', N'dungnhhe180993@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
+insert into Account (admin_id, account_username, account_email, account_password, account_type) values (3, N'huyngo123', N'huyndhe186674@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
+insert into Account (admin_id, account_username, account_email, account_password, account_type) values (4, N'hieunguyen123', N'hieunmhe181441@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'admin');
 
 -- Staffs must be added before an associated Account (if exists) can be created
 insert into Staff (staff_fullname) values (N'Test Staff Một');
 insert into Staff (staff_fullname) values (N'Test Staff Hai');
 insert into Staff (staff_fullname) values (N'Test Staff Ba');
 insert into Staff (staff_fullname) values (N'Test Staff Bốn');
-insert into Staff (staff_fullname) values (N'Test Staff Năm');
-insert into Staff (staff_fullname) values (N'Test Staff Sáu');
+
 -- Reset the identity seed for the Account table to 20
 -- Staffs' account ID starts from 21-40
 dbcc checkident (Account, RESEED, 50);
@@ -322,16 +317,14 @@ insert into Account(staff_id, account_username, account_email, account_password,
 insert into Account(staff_id, account_username, account_email, account_password, account_type) values (2, N'testStaff2', N'teststaff2@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'staff');
 insert into Account(staff_id, account_username, account_email, account_password, account_type) values (3, N'testStaff3', N'teststaff3@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'staff');
 insert into Account(staff_id, account_username, account_email, account_password, account_type) values (4, N'testStaff4', N'teststaff4@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'staff');
-insert into Account(staff_id, account_username, account_email, account_password, account_type) values (5, N'testStaff5', N'teststaff5@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'staff');
-insert into Account(staff_id, account_username, account_email, account_password, account_type) values (6, N'testStaff6', N'teststaff6@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'staff');
+
 
 -- Insert test promotion manager account
 insert into PromotionManager (pro_fullname) values (N'Test Promotion Manager Một');
 insert into PromotionManager (pro_fullname) values (N'Test Promotion Manager Hai');
 insert into PromotionManager (pro_fullname) values (N'Test Promotion Manager Ba');
 insert into PromotionManager (pro_fullname) values (N'Test Promotion Manager Bốn');
-insert into PromotionManager (pro_fullname) values (N'Test Promotion Manager Năm');
-insert into PromotionManager (pro_fullname) values (N'Test Promotion Manager Sáu');
+
 -- Promotion managers' account ID starts from 41-50
 dbcc checkident (Account, RESEED, 100);
 -- Insert Promotion Manager Account
@@ -339,8 +332,7 @@ insert into Account(pro_id, account_username, account_email, account_password, a
 insert into Account(pro_id, account_username, account_email, account_password, account_type) values (2, N'testPromotion2', N'testPromotion2@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'promotionManager');
 insert into Account(pro_id, account_username, account_email, account_password, account_type) values (3, N'testPromotion3', N'testPromotion3@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'promotionManager');
 insert into Account(pro_id, account_username, account_email, account_password, account_type) values (4, N'testPromotion4', N'testPromotion4@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'promotionManager');
-insert into Account(pro_id, account_username, account_email, account_password, account_type) values (5, N'testPromotion5', N'testPromotion5@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'promotionManager');
-insert into Account(pro_id, account_username, account_email, account_password, account_type) values (6, N'testPromotion6', N'testPromotion6@fpt.edu.vn', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'promotionManager');
+
 
 
 -- Customer must be added before an associated Account (if exists) can be created
@@ -359,17 +351,15 @@ insert into Account (customer_id, account_username, account_email, account_passw
 insert into Account (customer_id, account_username, account_email, account_password, account_type) values (5, N'khangnguyen', N'khgammingcraft@gmail.com', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'user');
 insert into Account (customer_id, account_username, account_email, account_password, account_type) values (6, N'hdkhang2112', N'hdkhang2112@gmail.com ', CONVERT(NVARCHAR(32), HashBytes('MD5', '123456'), 2), 'user');
 
--- Insert Food Types
-insert into FoodType (food_type) values (N'Mì và Bún');
-insert into FoodType (food_type) values (N'Bánh và Bánh Mì');
-insert into FoodType (food_type) values (N'Hải Sản');
-insert into FoodType (food_type) values (N'Món Ăn Truyền Thống');
-insert into FoodType (food_type) values (N'Món Ăn Châu Á');
-insert into FoodType (food_type) values (N'Món Thịt');
-insert into FoodType (food_type) values (N'Món ăn nhanh');
-insert into FoodType (food_type) values (N'Món ăn nhẹ');
-insert into FoodType (food_type) values (N'Món Tráng Miệng');
-insert into FoodType (food_type) values (N'Đồ uống');
+-- Insert Product Types
+insert into FoodType (food_type) values (N'Bag & Backpack');
+insert into FoodType (food_type) values (N'Shoes');
+insert into FoodType (food_type) values (N'Jewelry & Accessory');
+insert into FoodType (food_type) values (N'P & A');
+insert into FoodType (food_type) values (N'Baby');
+insert into FoodType (food_type) values (N'Stationery');
+insert into FoodType (food_type) values (N'Health & Beauty');
+insert into FoodType (food_type) values (N'Clothing');
 
 -- Ensure food_id starts from 1
 dbcc checkident (Food, RESEED, 0);
