@@ -615,16 +615,16 @@ insert into Product (product_type_id, product_name, product_description, product
 VALUES (8, N'Waffles','Waffles là một loại bánh ngọt xốp, giòn, nóng hổi với hình dáng lưới hoặc ô vuông. Thường được ăn với siro, kem và hoa quả.', 18000, 20, 0, 5, 15, 'https://www.allrecipes.com/thmb/imrP1HYi5pu7j1en1_TI-Kcnzt4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20513-classic-waffles-mfs-025-4x3-81c0f0ace44d480ca69dd5f2c949731a.jpg');
 
 -- Payment methods
-insert into PaymentMethod (payment_method) values (N'Thẻ tín dụng');
-insert into PaymentMethod (payment_method) values (N'Thẻ ghi nợ');
+insert into PaymentMethod (payment_method) values (N'Credit card');
+insert into PaymentMethod (payment_method) values (N'Debit card');
 insert into PaymentMethod (payment_method) values (N'COD');
 
 -- Order statuses
-insert into OrderStatus (order_status) values (N'Chờ xác nhận');
-insert into OrderStatus (order_status) values (N'Đang chuẩn bị món');
-insert into OrderStatus (order_status) values (N'Đang giao');
-insert into OrderStatus (order_status) values (N'Đã giao');
-insert into OrderStatus (order_status) values (N'Đã hủy');
+insert into OrderStatus (order_status) values (N'Waiting');
+insert into OrderStatus (order_status) values (N'Preparing');
+insert into OrderStatus (order_status) values (N'In progress');
+insert into OrderStatus (order_status) values (N'Delivered');
+insert into OrderStatus (order_status) values (N'Canceled');
 
 -- Voucher
 insert into Voucher (voucher_name, voucher_code, voucher_discount_percent, voucher_quantity, voucher_status, voucher_date) values ( N'Quốc tế phụ nữ', 'ADASD2FD23123DBE', 30, 15, 0,'20231021 00:01:00 AM' );
