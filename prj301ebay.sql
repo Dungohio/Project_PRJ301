@@ -481,51 +481,70 @@ insert into Product (product_type_id, product_name, product_description, product
 VALUES (4, N'Canh Chua','Canh Chua là một món canh truyền thống của Việt Nam, nổi tiếng với hương vị chua chua ngọt ngọt. Nước canh sánh mịn, có rau sống, cá và tôm, tạo nên một món canh đặc biệt, thích hợp cho bữa cơm gia đình.', 35000, 10, 1, 5, 20, 'https://i-giadinh.vnecdn.net/2023/04/25/Thanh-pham-1-1-7239-1682395675.jpg');
 
 
--- Baby
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Pad Thai','Pad Thai - món mì hấp dẫn từ Thái Lan, nổi tiếng với sự hòa quyện của mì xốt tương đậm đà, hòa quyện với hương vị ngọt ngào của tôm, thịt, và rau thơm tươi.', 60000, 30, 1, 5, 15, 'https://static01.nyt.com/images/2022/03/23/dining/17padthairex1/merlin_203116326_32624565-ffae-482d-9a55-043cf31afb0b-mediumSquareAt3X.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Takoyaki','Takoyaki là món ăn Nhật nổi tiếng, chiếc bánh tròn tròn, giòn mềm, bên trong có một mẩu takoyaki xanh xanh thơm ngon. Chỉ cần nhắm mắt và thưởng thức, bạn sẽ cảm nhận được hương vị trọn vẹn của Nhật Bản.', 55000, 28, 0, 5, 0, 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Takoyaki.jpg/640px-Takoyaki.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Bibimbap','Bibimbap là một món ăn truyền thống của Hàn Quốc, gồm cơm trắng, rau xào, thịt, trứng và sốt gochujang. Bạn có thể trộn tất cả các nguyên liệu lại với nhau để tạo ra một hương vị đặc biệt và đầy dinh dưỡng.', 65000, 35, 1, 5, 0, 'https://upload.wikimedia.org/wikipedia/commons/4/44/Dolsot-bibimbap.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Breakfast Burrito','Bánh Mì Sáng Burrito là một món ăn sáng thơm ngon với trứng, thịt xông khói, cà chua, và pho mát tan chảy, được gói trong một chiếc bánh mì mềm mại.', 50000, 20, 1, 5, 5, 'https://hips.hearstapps.com/hmg-prod/images/delish-breakfast-burrito-horizontaljpg-1541624805.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Chicken Curry','Gà Cà-ri lôi cuốn với những miếng thịt gà mềm mại và béo ngọt, ngập tràn trong nồi nước sốt vàng ươm, hòa quyện cùng hương vị cay nồng và thơm mùi gia vị.', 70000, 30, 1, 5, 0, 'https://www.foodandwine.com/thmb/8YAIANQTZnGpVWj2XgY0dYH1V4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spicy-chicken-curry-FT-RECIPE0321-58f84fdf7b484e7f86894203eb7834e7.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Fried Rice','Đây là một món cơm chiên ngon lành, được chế biến với gạo, thịt, rau củ và gia vị đặc trưng. Mùi thơm và hương vị đặc trưng sẽ khiến bạn thèm muốn.', 48000, 35, 1, 5, 30, 'https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Gyoza','Gyoza là một loại bánh xốp và giòn, bên trong chứa nhân thơm ngon từ thịt và rau củ. Ăn kèm với sốt, là một trải nghiệm ẩm thực nhẹ nhàng.', 55000, 30, 1, 5, 0, 'https://assets.epicurious.com/photos/628ba0d3fa016bab2139efa2/1:1/w_4546');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Peking Duck','Món ngon đặc trưng của Bắc Kinh, Vịt Quay với da giòn tan, thịt thơm mềm ngọt hòa quyện cùng những món ăn kèm tạo nên trải nghiệm thú vị trong mỗi miếng.', 90000, 10, 1, 5, 15, 'https://cdn.i-scmp.com/sites/default/files/images/methode/2018/11/21/b681f60a-eca4-11e8-b0fe-c62dccd2d711_image_hires_192253.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Samosa','Bánh samosa là một chiếc túi nhỏ, giòn tan bên ngoài, nhân thơm béo bên trong với những miếng khoai tây, rau củ và gia vị hài hòa. Chấm chut tuyệt vời!', 35000, 3, 0, 5, 0, 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Spring Rolls','Bánh cuốn gói hấp dẫn với lớp vỏ mỏng, bên trong chứa những lớp nhân tươi ngon. Ăn kèm nước mắm, tạo hương vị đặc trưng, là món lý tưởng cho bữa ăn nhẹ.', 38000, 30, 1, 5, 15, 'https://jackpurcellmeats.com.au/wp-content/uploads/2017/07/spring-rolls-01.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (5, N'Sushi','Sushi là một món ăn Nhật Bản gồm cơm trộn giấm và các loại thực phẩm khác như cá sống, rong biển, trứng, rau củ. Sushi có nhiều hình dạng và vị khác nhau, thường được ăn với gừng, wasabi và nước tương.', 70000, 25, 1, 5, 0, 'https://media.post.rvohealth.io/wp-content/uploads/2021/09/sushi-sashimi-732x549-thumbnail-732x549.jpg');
+ -- Toys 
 
--- Stationery
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Beef Carpaccio','Món bò Carpaccio là thịt bò siêu mỏng, ướp sốt hành tây, chanh và phô mai. Thường được thêm rau sống và bánh mỳ nướng.', 65000, 25, 1, 5, 5, 'https://www.seriouseats.com/thmb/VgVaMsNZog6fWU79Ottu-iw3CLc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SEA-italian-easy-beef-carpaccio-recipe-hero-01-e4153bc58c19429085be0e525888a37a.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Beef Tartare','Bò tái chanh là một món ăn được làm từ thịt bò sống, thái nhỏ và ướp với chanh, muối, tiêu và các loại gia vị khác. Món ăn có vị chua, mặn, cay và thơm, thường được ăn kèm với bánh mì hoặc rau sống.', 70000, 20, 1, 5, 0, 'https://upload.wikimedia.org/wikipedia/commons/d/db/Classic_steak_tartare.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Chicken Quesadilla','Chicken Quesadilla là một món ăn ngon và đơn giản, được làm từ bánh tráng nướng giòn, phô mai béo ngậy và thịt gà thơm nức. Bạn có thể thưởng thức món này với sốt salsa, kem chua hoặc guacamole.', 48000, 30, 1, 5, 15, 'https://hips.hearstapps.com/hmg-prod/images/chicken-quesadilla-index-64515c8e98e28.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Chicken Wings','Cánh gà nướng, giòn rụm, thơm phức với vị cay nồng đầy hấp dẫn. Múi thịt mềm mịn, ngọt ngào, khiến bạn không thể chối từ.', 55000, 5, 1, 5, 0, 'https://images.immediate.co.uk/production/volatile/sites/30/2020/12/Air-Fryer-Chicken-Wings-d2c6fa4.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Pork Chop','Bò Bía Xào Nước Mắm, hay còn gọi là Pork Chop, là món lợn nướng mềm mại, thơm béo, ăn kèm xào nước mắm đậm đà. Nó ngon tuyệt vời!', 60000, 20, 1, 5, 20, 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1600x1200/sd-aspect-1520972774-pork-chops-horizontal.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)     
-VALUES (6, N'Prime Rib','Prime Rib là một món ăn được làm từ phần thịt bò nằm ở phía trước của lưng. Thịt có màu đỏ tươi, mềm và ngọt, với nhiều mỡ và xương. Thịt được nướng ở nhiệt độ cao để tạo ra lớp vỏ giòn và thơm. Prime Rib thường được ăn kèm với sốt và rau.', 80000, 30, 1, 5, 0, 'https://www.kingsford.com/wp-content/uploads/2023/05/PrimeRib-8_cc1_00000000_72-Desktop.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Pulled Pork Sandwich','Món bánh mì nhân thịt xôi sụn được làm từ thịt lợn xôi mềm, mềm mại, và thơm lừng. Món này còn có hương vị cay nồng và ngọt ngào, chắc chắn sẽ khiến bạn muốn thưởng thức lần nữa.', 55000, 20, 1, 5, 30, 'https://www.simplyrecipes.com/thmb/xl-Bn-Y1HByU2ZfYZlaoHRVm0MQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Pulled-Pork-Sandwich-Lead-3b_vertical-94ec18fb8f264514b09a408359f5d7e8.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Steak','Món bò bít tết, một món ăn đậm đà và hấp dẫn, sẽ thỏa mãn vị giác của bạn với miếng thịt mềm mịn, thơm phức và đậm đà vị thịt.', 70000, 15, 1, 5, 0, 'https://www.skinnytaste.com/wp-content/uploads/2022/03/Air-Fryer-Steak-6.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Baby Back Ribs','Cánh sườn heo hầm mềm, vị ngọt đậm đà phảng phất hương thảo mộc, chảy nước mỡ hòa quyện với nước sốt đậm đà.', 75000, 20, 1, 5, 10, 'https://www.southernliving.com/thmb/sQ3jAjFAP-SPt_upe-Im4rxMKrQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-baked-baby-back-ribs-beauty-332_preview-34579f7f15ed4548ae3bb5b2048aab60.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (6, N'Filet Mignon','Filet Mignon là một miếng thịt bò mềm và ngon, được cắt từ phần thăn ngoài của bò. Thịt được nướng hoặc áp chảo cho đến khi chín tới mức bạn thích, thường là tái hoặc chín vừa. Filet Mignon có vị béo, ngọt và thơm.', 90000, 20, 1, 5, 15, 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2023/02/Filet-Mignon-main.jpg');
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(1, 'LEGO Star Wars Millennium Falcon', 'An iconic LEGO model of the Millennium Falcon spaceship.', 149.99, 50, 1, 4.9, 10, ' https://khodochoitreem.com/80088-large_default/lego-75295-millennium-falcon-microfighter-tank-60068.jpg '), 
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(2, 'Hot Wheels Super Track', 'An exciting racetrack for Hot Wheels cars.', 29.99, 100, 1, 4.7, 15, ' https://images-na.ssl-images-amazon.com/images/I/81j3hfLNcJL.jpg '), 
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(3, 'Barbie Dreamhouse', 'A luxurious three-story Barbie house with many accessories.', 199.99, 20, 1, 4.8, 20, ' https://m.media-amazon.com/images/I/71PpuvUNQ4L._AC_SL1500_.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(4, 'Nerf Elite Blaster', 'A high-performance Nerf blaster for action-packed play.', 39.99, 80, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/71ePN1TIO2L.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(5, 'Play-Doh Ultimate Fun Factory', 'A fun and creative Play-Doh set with multiple molds and tools.', 14.99, 150, 1, 4.4, 5, ' https://m.media-amazon.com/images/I/81FzW2lwtmS._AC_SL1500_.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(6, 'Fisher-Price Laugh & Learn Puppy', 'Interactive puppy that teaches numbers and letters.', 19.99, 100, 1, 4.6, 10, ' https://images-na.ssl-images-amazon.com/images/I/71M9jsP2KTL.jpg '), 
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(7, 'Puzzle 1000 Pieces - Nature Scenes', 'A challenging 1000-piece puzzle featuring beautiful nature landscapes.', 9.99, 200, 1, 4.7, 15, ‘https://m.media-amazon.com/images/I/81YahRl9CyL._AC_SL1500_.jpg '), 
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(8, 'Transformers Optimus Prime Action Figure', 'A detailed action figure of Optimus Prime that can transform.', 24.99, 60, 1, 4.5, 10, ' https://m.media-amazon.com/images/I/71uRENNFM4L._AC_SL1500_.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(9, 'Monopoly Classic Board Game', 'A timeless board game of buying, selling, and trading properties.', 19.99, 100, 1, 4.8, 12, ' https://images-na.ssl-images-amazon.com/images/I/61qODZoJc5L.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(10, 'UNO Card Game', 'A classic family card game that’s easy to learn and fun to play.', 7.99, 300, 1, 4.9, 5, ' https://m.media-amazon.com/images/I/81o2DARcdHL._AC_SL1500_.jpg '); 
+
+-- Stationery 
+ 
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(1, 'Moleskine Classic Notebook', 'A high-quality, durable notebook perfect for journaling.', 19.99, 150, 1, 4.8, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 
+(2, 'Pilot G2 Gel Pen', 'A smooth-writing gel pen with a comfortable grip.', 2.99, 500, 1, 4.7, 5, ' https://images-na.ssl-images-amazon.com/images/I/7165rkMde2L.jpg '), 
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(3, 'Sticky Notes 3x3 Pack', 'A colorful pack of sticky notes perfect for reminders and notes.', 4.99, 400, 1, 4.6, 8, ' https://m.media-amazon.com/images/I/51gMy464JaL._AC_SL1250_.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(4, 'Staedtler Colored Pencils Set of 24', 'A vibrant set of colored pencils for art and design.', 12.99, 200, 1, 4.7, 12, ' https://m.media-amazon.com/images/I/71FkuGmJFKL._AC_SL1500_.jpg '), 
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(5, 'A4 Ring Binder Folder', 'A durable ring binder for organizing documents.', 6.99, 300, 1, 4.5, 10, ' https://images-na.ssl-images-amazon.com/images/I/81LPIiywLTL.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(6, 'Sharpie Fine Point Permanent Marker', 'A versatile permanent marker for labeling and creative projects.', 1.99, 500, 1, 4.8, 5, ' https://pos.nvncdn.com/0d884c-53121/ps/20220422_HLOLMUGw9YlJInuqYgLVQney.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(7, 'Elmer\'s Glue-All Multi-Purpose Glue', 'A reliable multi-purpose glue for crafts and projects.', 3.49, 250, 1, 4.6, 8, ' https://images-na.ssl-images-amazon.com/images/I/61q+x3tD8WL.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(8, 'Scotch Magic Tape Dispenser', 'An easy-to-use tape dispenser for office and home use.', 5.99, 150, 1, 4.7, 10, ' https://m.media-amazon.com/images/I/71Y2em1MtzL._AC_SL1500_.jpg '),
+	
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(9, 'Post-it Flag Highlighter', 'A highlighter with built-in Post-it flags for easy marking.', 3.99, 300, 1, 4.7, 8, ' https://m.media-amazon.com/images/I/71dAFbnucmL._AC_SL1500_.jpg '),
+
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
+(10, 'Faber-Castell Eraser Pencil', 'An eraser in pencil form for precise erasing.', 1.49, 400, 1, 4.6, 5, ' https://m.media-amazon.com/images/I/712rTU0O-iL._AC_SL1500_.jpg '); 
+	
 
 -- Health & Beauty
 insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
