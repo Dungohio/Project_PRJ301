@@ -364,6 +364,75 @@ insert into FoodType (food_type) values (N'Clothing');
 -- Ensure food_id starts from 1
 dbcc checkident (Food, RESEED, 0);
 -- Noodle
+-- Insert Product Types
+insert into ProductType(product_type) values (N'Cosmetics');
+insert into ProductType(product_type) values (N'Clothes');
+
+
+--Cosmetics
+
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url)VALUES
+(1, 'Creava  Moisturizing Cream', 'A rich cream to hydrate and nourish your skin.', 19.99, 100, 40, 4.5, 10, 'https://www.bachhoacc.vn/wp-content/uploads/2024/03/kiotviet_7c528aa0bce6462cd77477a7b5b1714e.jpg')
+/* Kem dưỡng ẩm - Một loại kem giàu dưỡng chất giúp cấp ẩm và nuôi dưỡng làn da của bạn. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(2, 'Image Vital C Hydrating Anti Aging', 'Serum that reduces the appearance of fine lines and wrinkles.', 29.99, 50, 1, 4.7, 15, 'https://edbeauty.vn/wp-content/uploads/2016/06/serum-duong-giam-kich-ung-image-vital-c-hydrating-anti-aging-serum-1.jpg')
+/* Serum chống lão hóa - Serum giúp giảm sự xuất hiện của các nếp nhăn và vết chân chim. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(3, 'EAORON Instant Brightening Face Mask', 'A face mask that brightens and revitalizes dull skin.', 14.99, 80, 1, 4.3, 5, 'https://media.loveitopcdn.com/2064/thumb/mat-na-duong-trang-da-eaoron-instant-brightening-face-mask-100.jpg')
+/* Mặt nạ sáng da - Mặt nạ giúp làm sáng và tái tạo làn da xỉn màu. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(4, 'DHC Lip Cream', 'A hydrating lip balm to keep lips soft and smooth.', 5.99, 200, 1, 4.6, 8, 'https://storage.googleapis.com/jagodo/jagodo/2022/12/ee5f6717-son-duong-dhc-11.jpg')
+/* Son dưỡng môi - Một loại son dưỡng giúp giữ cho môi mềm mượt và mịn màng. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(5, 'Power Grip Primer', 'Preps skin for a flawless makeup application.', 12.99, 100, 1, 4.4, 10, 'https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwed6a3b79/2021/82846_OpenA_R.jpg?sfrm=png&sw=780&q=90')
+/* Kem lót trang điểm - Chuẩn bị da cho lớp trang điểm hoàn hảo. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(6, 'Voluminous Waterproof Mascara', 'Long-lasting, waterproof mascara for voluminous lashes.', 11.99, 70, 1, 4.5, 12, 'https://images-na.ssl-images-amazon.com/images/I/61Gl4+O523L.jpg') 
+/* Mascara chống nước - Mascara lâu trôi, chống nước cho hàng mi dày hơn. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'M.A.C Matte Lipstick', 'A bold, matte lipstick with long-lasting color.', 9.99, 150, 1, 4.2, 20, 'https://bizweb.dktcdn.net/100/375/006/products/807005210082a2dcfb93-1721029251361.jpg?v=1721029255403')
+/* Son môi lì - Son lì táo bạo với màu sắc lâu phai. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'BB Cream', 'All-in-one BB cream that moisturizes, protects, and evens skin tone.', 15.99, 60, 0, 4.6, 15, 'https://down-vn.img.susercontent.com/file/eec556dc88f9979995c56d6e69780865')
+/* Kem BB - Kem đa năng giúp dưỡng ẩm, bảo vệ và làm đều màu da. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(9, 'Cerave Facial Cleanser', 'A gentle cleanser that removes dirt and impurities without drying.', 8.99, 120, 0, 4.5, 10, 'https://images-na.ssl-images-amazon.com/images/I/51p9kUSoX2L.jpg')
+/* Sữa rửa mặt - Sữa rửa mặt dịu nhẹ giúp loại bỏ bụi bẩn và tạp chất mà không gây khô da. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(10, 'Neutrogena Sunscreen SPF 50', 'Broad-spectrum sunscreen for daily UV protection.', 13.99, 90, 1, 4.8, 18, 'https://hangnhapmy.us/storage/uploads//UBSv1rvJFGOuajRbwHBwA9iApnnCmhIqcXG4PaLR.jpg')
+/* Kem chống nắng SPF 50 - Kem chống nắng phổ rộng bảo vệ da hàng ngày khỏi tia UV. */
+
+--Clothes
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(11, 'Classic White T-Shirt', 'A soft, breathable cotton T-shirt, perfect for everyday wear.', 9.99, 150, 1, 4.5, 10, 'https://www.taylorstitch.com/cdn/shop/products/The_Organic_Cotton_Tee_VintageWhite_Front.jpg?v=1680906500')
+/* Áo thun trắng cổ điển - Áo thun cotton mềm mại, thoáng khí, phù hợp cho trang phục hàng ngày. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(12, 'Denim Jacket', 'Stylish denim jacket with a classic fit and button closure.', 39.99, 80, 1, 4.7, 15, 'https://media.jag.com.au/image/upload/c_fill,f_auto,h_785,q_auto,w_628/v1699506919/media/image/jms201071_fadedvintage_a.jpg') 
+/* Áo khoác denim - Áo khoác denim thời trang với kiểu dáng cổ điển và cài nút. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(13, 'Black Skinny Jeans', 'Stretchy skinny jeans for a sleek, modern look.', 29.99, 100, 1, 4.6, 12, 'https://www.hudsonjeans.com/cdn/shop/products/WM422DWI_BLACK_l.jpg?v=1681220955') 
+/* Quần jeans ôm đen - Quần jeans ôm co giãn cho vẻ ngoài hiện đại, thon gọn. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(14, 'Floral Summer Dress', 'Lightweight, floral dress perfect for summer days.', 24.99, 60, 1, 4.4, 20, 'https://www.bannsboutique.com/cdn/shop/files/retro-floral-a-line-dress-b-ann-s-boutique-llc-3_1024x1024.jpg?v=1711051237') 
+/* Váy mùa hè họa tiết hoa - Váy nhẹ nhàng, họa tiết hoa, phù hợp cho những ngày hè. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url)VALUES
+(15, 'Hooded Sweatshirt', 'Cozy hooded sweatshirt with a soft fleece lining.', 19.99, 120, 1, 4.5, 10, 'https://thedarkgallery.vn/wp-content/uploads/2023/12/bordeauxhooded.jpg') 
+/* Áo hoodie - Áo hoodie ấm áp với lớp lót nỉ mềm mại. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(16, 'Plaid Button-Up Shirt', 'A classic plaid shirt with a button-up front.', 22.99, 90, 1, 4.3, 8, 'https://www.westportbigandtall.com/cdn/shop/files/42431_MULT_1500x.jpg?v=1706812689')
+/* Áo sơ mi kẻ sọc - Áo sơ mi kẻ cổ điển với hàng cúc phía trước. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(17, 'Cargo Shorts', 'Durable cargo shorts with multiple pockets for convenience.', 18.99, 100, 0, 4.2, 5, 'https://product.hstatic.net/1000277171/product/z5646752466915_86e90bd15c4170d9915127a778204000_b25475dd1ae547d4949f3a8c0a00a275_master.jpg')
+/* Quần short túi hộp - Quần short túi hộp bền bỉ với nhiều túi tiện lợi. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(18, 'Athletic Joggers', 'Comfortable joggers designed for workouts or casual wear.', 21.99, 110, 0, 4.6, 15, 'https://thoitrangbigsize.vn/wp-content/uploads/2024/06/2-10.jpg')
+/* Quần jogger thể thao - Quần jogger thoải mái, thích hợp cho tập luyện hoặc mặc thường ngày. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(19, 'Wool Coat', 'Elegant wool coat perfect for keeping warm during winter.', 89.99, 40, 1, 4.8, 25, 'https://marimekko.vn/cdn/shop/files/MM_092352_800_5_4117ed02-203e-4944-a585-c0981bd248a1.jpg?v=1709198897&width=1445')
+/* Áo khoác len - Áo khoác len thanh lịch, hoàn hảo để giữ ấm trong mùa đông. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(20, 'Leather Biker Jacket', 'A stylish leather jacket with a classic biker design, perfect for a cool, edgy look.', 99.99, 50, 1, 4.7, 20, 'https://www.johnelliott.com/cdn/shop/products/LEATHER_MOTO_JACKET_BLACK_FLAT.jpg?v=1696288948');
+/* Áo khoác da biker - Áo khoác da phong cách với thiết kế biker cổ điển, hoàn hảo cho vẻ ngoài cá tính, chất ngầu. */
 insert into Food (food_type_id, food_name, food_description,food_price, food_limit, food_status, food_rate, discount_percent, food_img_url) 
 values (1, N'Phở','Phở là một bát nước dùng đầy ắp hương vị thơm ngon, chứa bún mềm mại và thịt bò mỏng. Một trải nghiệm ấm áp, ngon lành của ẩm thực Việt Nam!', 40000, 100, 1, 5, 0, 'https://www.allrecipes.com/thmb/SZjdgaXhmkrRNLoOvdxuAktwk3E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/228443-authentic-pho-DDMFS-4x3-0523f6531ccf4dbeb4b5bde52e007b1e.jpg');
 insert into Food (food_type_id, food_name, food_description,food_price, food_limit, food_status, food_rate, discount_percent, food_img_url) 
