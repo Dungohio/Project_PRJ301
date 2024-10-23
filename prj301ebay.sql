@@ -535,7 +535,7 @@ INSERT INTO Product (product_id, product_name, product_description, product_pric
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES 	
 (10, 'Faber-Castell Eraser Pencil', 'An eraser in pencil form for precise erasing.', 1.49, 400, 1, 4.6, 5, ' https://m.media-amazon.com/images/I/712rTU0O-iL._AC_SL1500_.jpg '); 
 	
-
+----Cosmetics
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url)VALUES
 (7, 'Creava  Moisturizing Cream', 'A rich cream to hydrate and nourish your skin.', 19.99, 100, 40, 4.5, 10, 'https://www.bachhoacc.vn/wp-content/uploads/2024/03/kiotviet_7c528aa0bce6462cd77477a7b5b1714e.jpg')
 /* Kem dưỡng ẩm - Một loại kem giàu dưỡng chất giúp cấp ẩm và nuôi dưỡng làn da của bạn. */
@@ -598,7 +598,10 @@ INSERT INTO Product (product_id, product_name, product_description, product_pric
 INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
 (8, 'Leather Biker Jacket', 'A stylish leather jacket with a classic biker design, perfect for a cool, edgy look.', 99.99, 50, 1, 4.7, 20, 'https://www.johnelliott.com/cdn/shop/products/LEATHER_MOTO_JACKET_BLACK_FLAT.jpg?v=1696288948');
 /* Áo khoác da biker - Áo khoác da phong cách với thiết kế biker cổ điển, hoàn hảo cho vẻ ngoài cá tính, chất ngầu. */
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 
 -- Payment methods
