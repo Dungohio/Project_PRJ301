@@ -365,75 +365,65 @@ insert into ProductType (product_type) values (N'Clothing');
 dbcc checkident (Product, RESEED, 0);
 -- Bag & Backpack
 insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Phở','Phở là một bát nước dùng đầy ắp hương vị thơm ngon, chứa bún mềm mại và thịt bò mỏng. Một trải nghiệm ấm áp, ngon lành của ẩm thực Việt Nam!', 40000, 100, 1, 5, 0, 'https://www.allrecipes.com/thmb/SZjdgaXhmkrRNLoOvdxuAktwk3E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/228443-authentic-pho-DDMFS-4x3-0523f6531ccf4dbeb4b5bde52e007b1e.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Bún bò Huế','Bún bò Huế là một món ăn đặc trưng của miền Trung Việt Nam. Nó gồm có bún, thịt bò, giò heo, chả Huế, rau và nước lèo cay, thơm, ngọt. Bạn có thể thêm chanh, tỏi, ớt để tăng hương vị.', 50000, 40, 1, 5, 5, 'https://th.bing.com/th/id/OIP.SXfegdkWCvC_Hbc3A4eW4wHaE7?pid=ImgDet&rs=1');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Bún đậu mắm tôm','Bún đậu mắm tôm, một món ngon Việt Nam, là sự pha trộn tuyệt vời của bún, đậu hũ, mắm tôm và rau sống. Chúng tạo thành một món ăn đậm đà, thơm ngon và đầy chất xúc tiến.', 45000, 50, 1, 5, 0, 'https://img-global.cpcdn.com/recipes/2c630c584ca9709c/751x532cq70/bun-d%E1%BA%ADu-m%E1%BA%AFm-tom-recipe-main-photo.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Bún mắm','Bún mắm, a flavor-packed Vietnamese dish, is a bowl of joy with vermicelli swimming in a rich, aromatic broth. Packed with seafood goodness, it is a taste adventure worth diving into!', 40000,70, 0, 5, 30, 'https://th.bing.com/th/id/OIP.3p7EKLDnu_dS3comDM40oQHaE0?pid=ImgDet&rs=1');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Bún riêu','Bún riêu là món ăn ngon từ miền Nam Việt Nam. Nước dùng đậm đà, có cà chua và tôm, cùng với bún và chả cá thơm ngon. Ai thích hải sản chắc chắn sẽ yêu thích món này!', 40000, 30, 1, 5, 0, 'https://th.bing.com/th/id/R.e41d43c5534281e211ae9a708a2b5517?rik=eec%2bt0%2fAUqttcQ&riu=http%3a%2f%2fseonkyounglongest.com%2fwp-content%2fuploads%2f2018%2f06%2fBun-Rieu-07.jpg&ehk=0iemq%2bdo28ouF67dFC5dFQTUvo%2biGdgK7hx4tsn%2bv%2bc%3d&risl=&pid=ImgRaw&r=0');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Bún thịt nướng','Bún thịt nướng là một món ăn ngon và đơn giản của Việt Nam. Bạn sẽ thưởng thức những sợi bún mềm, thịt heo nướng thơm lừng, rau xanh tươi mát và nước mắm chua ngọt. Món ăn này rất phù hợp cho mùa hè nóng bức.', 35000, 50, 1, 5, 5, 'https://th.bing.com/th/id/R.dd5289abf81592cb720dedc3bf6a598a?rik=L6zDZI0S1g2QyA&pid=ImgRaw&r=0');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Mì quảng','Mì quảng là một món ăn đặc trưng của miền Trung Việt Nam. Mì quảng có mì vàng, nước dùng đậm đà, thịt heo, tôm, trứng, rau xanh và bánh đa. Mì quảng có vị ngọt, mặn, chua và cay hài hòa.', 50000, 20, 1, 5, 0, 'https://beptruong.edu.vn/wp-content/uploads/2022/10/mi-quang-chay-voi-vi-thanh-dam.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)   
-values (1, N'Ramen','Ramen là một loại mì cực ngon có hương vị thơm ngon đến từ xương nấu chín trong nồi lẩu. Mì dai dai, thịt thơm, ngập nước dùng đậm đà.', 63000, 100, 1, 5, 0, 'https://www.justonecookbook.com/wp-content/uploads/2023/04/Spicy-Shoyu-Ramen-8055-I.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-values (1, N'Hủ Tiếu','Hủ Tiếu là một món ăn Việt Nam thơm ngon và bổ dưỡng. Nó bao gồm các miến xốt ngon và thịt, tôm hoặc đậu hũ tươi mềm, cùng với rau và gia vị đặc trưng.', 38000, 30, 1, 5, 10, 'https://vcdn1-giadinh.vnecdn.net/2023/05/15/Bc8Thnhphm18-1684125639-9811-1684125654.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=i0OuvKxyIvG-1BRluganjQ');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-values (1, N'Ravioli','Ravioli là một món ăn của Ý, gồm những miếng bột nhỏ nhân với phô mai, thịt, rau hoặc hải sản. Ravioli được luộc chín và ăn kèm với sốt cà chua, kem hoặc bơ. Ravioli có hình vuông, tròn hoặc bầu dục.', 30000, 40, 0, 5, 15, 'https://cdn11.bigcommerce.com/s-cjh14ahqln/product_images/uploaded_images/cheese-ravioli-2-web.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-values (1, N'Spaghetti Bolognese','Bò Bolognaise với mì Spaghetti: Món ngon hòa quyện giữa thịt bò xay thơm phức và sốt bò đậm đà, kết hợp cùng mì mềm mại tạo thành một món ăn đậm chất Ý, truyền cảm hứng.', 58000, 30, 1, 5, 15, 'https://supervalu.ie/image/var/files/real-food/recipes/Uploaded-2020/spaghetti-bolognese-recipe.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-values (1, N'Spaghetti Carbonara','Spaghetti Carbonara là một món Ý ngon khó cưỡng tại nhà hàng chúng tôi! Sợi mì hấp chín mềm kèm sốt kem trứng, phô mai, bơi trong hương thơm thịt heo muối mặn.', 60000, 20, 1, 5, 5, 'https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-threeByTwoMediumAt2X-v2.jpg');
+values (1, N'Waterproof Madame Graffiti Travel Bag','This personalized travel bag is all about style. Made with high-grade waterproof nylon', 30.99, 100, 1, 0, 'https://m.media-amazon.com/images/I/71xhEBxc4WL._AC_UY1000_.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'COACH Times Square Tabby Shoulder Bag','Inspired by the dynamic energy of our hometown New York City, the Times Square Tabby is a modern take on an archival 1970s Coach design.', 50.29, 40, 1, 5, 'https://s7d2.scene7.com/is/image/Coach/cw629_b4bk_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'STELLA McCARTNEY Falabella Mini Shoulder Bag','At Stella McCartney, great innovations come in small packages too. Our range of vegan mini bags and clutches are made from 100% cruelty-free materials.', 45.99, 50, 1, 0, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NyUJ_ybujRt9xWawz6eQVcuhEERsyzFh3w&s');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'VALENTINO BAGS - Bigs Crossbody','Valentino Bags Bigs shoulder bag unfolds to reveal a remarkably roomy interior, featuring two open compartments and one secured by a zipper.', 190.2, 70, 0, 30, 'https://img01.ztat.net/article/spp-media-p1/0f13c0fd722231678b8ebd9e404c990b/830bc43a35af43adb321b5e76cf75deb.jpg?imwidth=1800&filter=packshot');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'Fjällräven Kånken Backpack','Fjällräven Kånken is a classic backpack, known for its square shape and functional, durable design. It is perfect for both school and everyday use.', 90.99, 120, 1,10, 'https://m.media-amazon.com/images/I/71uvsxViofL._AC_UY1000_.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'Osprey Farpoint 40 Travel Backpack','The Osprey Farpoint 40 is a versatile travel backpack with plenty of room for all your essentials, perfect for adventures near or far.', 120.99, 80, 1, 15, 'https://m.media-amazon.com/images/I/81tbav1HsSL._AC_SL1500_.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'Timbuk2 Authority Laptop Backpack','This backpack is ideal for professionals on the go. It includes a dedicated laptop compartment and ample space for organizing your work essentials.', 130.49, 60, 1, 5, 'https://www.timbuk2.com/cdn/shop/products/timbuk2-authority-laptop-backpack-deluxe-eco-titanium-1825-3-1089-front_1_1024x1024.png?v=1664825257');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'Prada Re-Edition Nylon Bag','This elegant Prada nylon bag is a re-edition of their iconic 2005 design. Made with recycled materials, it combines sustainability with style.', 299.99, 30, 1, 10, 'https://cdn-images.farfetch-contents.com/19/66/19/46/19661946_43929832_1000.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'Herschel Supply Co. Classic Backpack','The Herschel Classic Backpack offers simple, durable design for everyday use, complete with a spacious main compartment and front pocket.', 59.99, 150, 1, 0, 'https://product.hstatic.net/200000725249/product/alo-herschel-classic-standard-15-backpack-m-gargoyle-13189-01658572077_cb99d57720714feba565cb72b24ca1bb_master.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (1, N'Louis Vuitton Neverfull MM','This Louis Vuitton Neverfull MM is a spacious and iconic tote bag that complements any wardrobe, crafted from premium materials.', 1250.00, 20, 1, 20, 'https://vn.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--N40599_PM2_Front%20view.jpg');
 
 -- Shoes
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh bèo','Bánh bèo là món ăn truyền thống Việt Nam, như những chiếc lá xanh từ trời xuống. Chúng mềm mịn như lòng tim, được trang trí bằng hành phi và tôm khô. Bánh bèo, một hương vị của miền Trung.', 25000, 50, 1, 5, 10, 'https://static.vinwonders.com/production/banh-beo-nha-trang-1.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh bột lọc','Bánh bột lọc - một món đặc sản miền Trung, chiếc bánh nhỏ xinh, trong vỏ mỏng, dẻo ngon, được nhồi nhét với tôm, thịt heo và nước mắm thơm lừng.', 25000, 30, 1, 5, 0, 'https://th.bing.com/th/id/OIP.1W7a0ykWZ0Sk8ohsGHZk0QHaE8?pid=ImgDet&rs=1');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh căn','Bánh căn là một món ăn Việt ngon tuyệt! Chiếc bánh nhỏ xinh, giống như chiếc đĩa mình xinh đẹp, nó chín từng tí một, ăn vào giòn rụm, thơm béo.', 35000, 30, 1, 5, 15, 'https://cdn.vatgia.com/pictures/thumb/0x0/2021/03/1616756570-lwn.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh canh','Bánh canh là một món ăn truyền thống của Việt Nam, có mì to, dẻo và mịn mà bạn có thể ăn cùng nước dùng thơm lừng và các loại thịt, hải sản.', 34000, 30, 1, 5, 0, 'https://th.bing.com/th/id/OIG.UJ7hyP4iO5Y6Cqo7lU5N?pid=ImgGn');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh chưng','Bánh chưng là một món ăn truyền thống của người Việt Nam vào dịp Tết Nguyên Đán. Bánh được làm từ gạo nếp, đậu xanh, thịt lợn và lá dong. Bánh có hình vuông, biểu tượng cho đất trời.', 40000, 10, 0, 5, 20, 'https://www.cet.edu.vn/wp-content/uploads/2020/01/banh-chung.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh cuốn','Bánh cuốn là một món ăn truyền thống của Việt Nam. Quàng một mảnh bánh mỏng xinh xắn xiêu từ gạo nằm nhẹ nhàng trên đĩa, kèm theo chút thịt và gia vị quen thuộc. Thơm ngon và đơn giản, một trải nghiệm ẩm thực tuyệt vời.', 20000, 20, 1, 5, 0, 'https://i.ytimg.com/vi/vR18wfdLtJE/maxresdefault.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh đúc','Bánh đúc là một món ngon truyền thống Việt Nam. Nó giống như chiếc bánh mì mềm mịn, nhưng được làm từ bột nếp, thường ăn kèm với nước mắm và gia vị. Thơm ngon và đặc trưng!', 34000, 10, 1, 5, 5, 'https://i.ytimg.com/vi/-he2nZsGghA/maxresdefault.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh giò','Bánh giò là một món ăn đặc trưng của miền Bắc Việt Nam. Bánh giò có vỏ bánh làm từ bột gạo nếp, nhân bánh là thịt lợn và nấm đông cô. Bánh giò được gói trong lá chuối và hấp chín. Bánh giò có hương vị thơm ngon, béo ngậy và dẻo dai.', 38000, 20, 1, 5, 0, 'https://th.bing.com/th/id/R.b63b36f87a42ca49b9c3cf9cdbb98dd6?rik=W7iOEdgJi7vMhA&pid=ImgRaw&r=0');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)     
-VALUES (2, N'Bánh khọt','Bánh khọt là món ăn Việt Nam thơm ngon và hấp dẫn. Chúng là những chiếc bánh nhỏ, giòn tan, có nhân tôm, thịt, và rau sống. Hãy thưởng thức món ăn này cùng gia đình và bạn bè!', 40000, 0, 0, 5, 30, 'https://th.bing.com/th/id/R.3710363219d01194ae36bb770a07ad3f?rik=L2f9%2bVTEPN9j9w&riu=http%3a%2f%2ffoodisafourletterword.com%2fwp-content%2fuploads%2f2020%2f12%2fVietnamese_Crispy_Savory_Shrimp_Pancakes_Recipe_Banh_Khot_top.jpg&ehk=XCD8GsPPzpMrhvD6HySuocNVMJ4fXCObJXtrs7Bde0c%3d&risl=&pid=ImgRaw&r=0');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh mì','Bánh mì là một loại bánh mì Pháp được nhồi với thịt, rau, đồ chua và nước sốt. Bánh mì có vỏ giòn, ruột mềm và hương vị đậm đà. Bánh mì là món ăn đường phố phổ biến ở Việt Nam.', 20000, 30, 1, 5, 0, 'https://th.bing.com/th/id/R.9bd3f3d87a4571fe7a6300f26941058b?rik=ZmuwBpVNPPYIwQ&pid=ImgRaw&r=0');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh pía','Bánh pía là một loại bánh truyền thống ngon lành của Việt Nam, có đường mềm mịn bên trong và lớp vỏ giòn tan bên ngoài. Hương vị thơm ngọt sẽ làm bạn thích thú mỗi khi thưởng thức.', 60000, 20, 1, 5, 0, 'https://media.urbanistnetwork.com/saigoneer/article-images/2018/09/Sep17/lapia/BanhPia1b.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh tét','Bánh tét là một món ăn truyền thống Việt, giống như một cây cốm dẻo bọc bên ngoài, nhân bên trong chứa đậu xanh và thịt. Ăn rất ngon, đặc biệt vào dịp Tết.', 66000, 10, 1, 5, 15, 'https://img4.thuthuatphanmem.vn/uploads/2019/12/16/anh-dep-nhat-ve-banh-chung-truyen-thong-cua-nguoi-dan-toc_023616788.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh tráng nướng','Bánh tráng nướng là một loại món ăn truyền thống của miền Nam Việt Nam. Nó được làm từ bánh tráng mỏng và giòn rồi thêm lớp nước mắm, hành phi và các loại gia vị khác. Món này thơm ngon và rất phổ biến!', 15000, 20, 1, 5, 0, 'https://bizweb.dktcdn.net/100/393/897/files/banh-trang-nuong-bao-nhieu-calo.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Bánh xèo','Bánh xèo là một món ăn ngon và đặc trưng của Việt Nam. Bánh xèo được làm từ bột gạo, nước cốt dừa, nghệ và muối. Bên trong bánh có tôm, thịt lợn, giá đỗ và rau xanh. Bánh xèo được ăn kèm với nước mắm chua ngọt.', 30000, 30, 0, 5, 0, 'https://th.bing.com/th/id/R.517c2ff96732c3950f8e95a673c01f09?rik=%2fqn6R%2fZgswIjyg&pid=ImgRaw&r=0');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Carrot Cake','Bánh Carrot Cake là một món tráng miệng vừa ngọt ngọt vừa thơm, với những lớp bánh mềm mịn, chứa những miếng cà rốt tươi mọng. Một món ngon đáng thử!', 48000, 20, 1, 5, 20, 'https://images.squarespace-cdn.com/content/v1/5d7a597d2459d4207ae1a00a/1575826400580-43ATBE70CA4J66XS53T7/carrot_cake-3.jpg?format=1000w');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'French Toast','Bánh mì nướng là một món ăn sáng ngon miệng, được làm từ những lát bánh mì ngâm trong trứng và sữa, rồi nướng chín vàng. Bạn có thể ăn kèm với mật ong, kem, hoặc trái cây tùy thích.', 45000, 40, 1, 5, 0, 'https://www.simplyrecipes.com/thmb/b48moNCTtaUYEc1Qyxhe9V66XKc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-French-Toast-Lead-Shot-3b-c3a68a576a9548f5bd43cce3d2d7f4b7.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Garlic Bread','Bánh mỳ tỏi là loại bánh mỳ mềm, thơm phức của tỏi, béo ngậy từ bơ, vàng ươm từ lò nướng. Ăn kèm nóng hổi, ngon miệng!', 58000, 30, 1, 5, 15, 'https://www.sorrentina.in/cdn/shop/articles/Garlic_Bread.webp?v=1684226216');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Lasagna','Mì lasagna là một món ăn Ý cổ điển với lớp mì, thịt bò xay, sốt cà chua và phô mai. Nó ngon, béo và ngon miệng, hấp dẫn mọi người.', 45000, 30, 1, 5, 0, 'https://static01.nyt.com/images/2023/08/31/multimedia/RS-Lasagna-hkjl/RS-Lasagna-hkjl-superJumbo.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Pancakes','Bánh kếp là một món ăn ngon và đơn giản, được làm từ bột mì, trứng, sữa và bơ. Bánh được nướng trên chảo cho đến khi vàng giòn, rồi thưởng thức với mật ong, kem, hoa quả hoặc những nguyên liệu bạn thích. Bánh kếp có vị ngọt, béo và mềm, rất hợp cho bữa sáng hoặc bữa phụ.', 40000, 20, 1, 5, 0, 'https://www.allrecipes.com/thmb/WqWggh6NwG-r8PoeA3OfW908FUY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-Good-old-Fashioned-Pancakes-mfs_001-1fa26bcdedc345f182537d95b6cf92d8.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Panna Cotta','Panna Cotta là một món tráng miệng Ý đặc biệt tuyệt vời! Nó giống như một chiếc bánh flan mềm mại, thơm ngon, với lớp kem sữa ngọt béo đậm đà.', 25000, 35, 0, 5, 20, 'https://biancazapatka.com/wp-content/uploads/2022/12/panna-cotta-720x1008.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Red Velvet Cake','Red Velvet Cake – bánh kem đỏ mịn, mềm mại và sôcôla vị. Lớp kem tươi thơm phủ trên mỗi lát bánh, khiến bạn tan chảy trong hương vị ngọt ngào, dịu nhẹ.', 44000, 20, 1, 5, 0, 'https://www.allrecipes.com/thmb/gDJ1S6ETLfWGyyWw_4A_IGhvDYE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9295_red-velvet-cake_ddmfs_4x3_1129-a8ab17b825e3464a9a53ceeda54ff461.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (2, N'Strawberry Shortcake','Bánh shortcake dâu tây là một món tráng miệng tuyệt vời! Khi cắn vào, bạn sẽ cảm nhận được sự ngọt ngào của dâu tây mọng nước, kết hợp với vị béo bùi của kem tươi và độ mềm mịn của bánh.', 70000, 28, 1, 5, 5, 'https://th.bing.com/th/id/OIG.3zJBFoevyz04wpkIIDZx?pid=ImgGn');
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (2, N'Nike Air Max 270','The Nike Air Max 270 is engineered for all-day comfort and style. Featuring a large air unit for cushion and a sleek, modern design.', 150.99, 100, 1, 0, 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/gorfwjchoasrrzr1fggt/AIR+MAX+270.png');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Adidas Ultraboost 22','Designed for running enthusiasts, the Adidas Ultraboost 22 offers unparalleled comfort, a snug fit, and advanced performance technology.', 180.49, 80, 1, 10, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbl3vEmqR3UsF5J6H74YQDD67-Fr2XXrE3kg&s');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (2, N'Converse Chuck Taylor All Star','The Converse Chuck Taylor All Star is a timeless sneaker that offers a durable canvas upper and classic design for everyday wear.', 70.00, 120, 1, 5, 'https://product.hstatic.net/200000265619/product/568497c-thumb-web_19a679fd48aa48a4a50eae354087309c_1024x1024.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Vans Old Skool','Vans Old Skool is a classic skate shoe with a durable suede and canvas upper, padded tongue and lining, and the signature rubber waffle outsole.', 60.00, 90, 1, 0, 'https://bizweb.dktcdn.net/100/140/774/products/vans-old-skool-black-white-vn000d3hy28-2.jpg?v=1625905148527');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Birkenstock Arizona Sandals','The Birkenstock Arizona Sandals are known for their contoured cork footbed and adjustable straps, offering excellent comfort and support.', 100.99, 50, 1, 15, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvEwfgfo5AmTr56UH2RpPGyUfppCA9eTKmUg&s');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Gucci Ace Leather Sneakers','The Gucci Ace Leather Sneakers bring high-end luxury to casual footwear, crafted from premium materials and adorned with iconic branding.', 650.00, 30, 1, 10, 'https://24cara.vn/wp-content/uploads/2019/09/652233232232.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Adidas Yeezy Boost 350 V2','The Adidas Yeezy Boost 350 V2 is a standout in streetwear, combining Kanye West’s visionary design with Adidas’s technical innovation.', 220.00, 40, 1, 20, 'https://sonauthentic.com/public/thumbs/800x0x1/90_giay-adidas-yeezy-boost-350-v2-beluga-reflective-gw1229-oQA6IC9lBK.webp');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url) 
+values (2, N'Dr. Martens 1460 Boots','Dr. Martens 1460 is a classic lace-up boot with a durable leather upper, grooved edges, and signature yellow stitching, offering a tough, timeless style.', 140.00, 70, 1, 0, 'https://vn-test-11.slatic.net/p/e810edf42d12362245ff94c03ceaae80.jpg');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Crocs Classic Clog','Crocs Classic Clog offers a lightweight, comfortable fit with durable foam cushioning and ventilation ports for breathability.', 45.99, 200, 1, 5, 'https://www.crocs.com.vn/cdn/shop/products/10001-2Y2-2_1400x.jpg?v=1664259807');
+
+insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status,  discount_price, product_img_url) 
+values (2, N'Puma RS-X3 Puzzle Sneakers','The Puma RS-X3 Puzzle Sneakers are known for their bold, futuristic design and cushioned sole, blending streetwear style with performance.', 110.00, 60, 1, 10, 'https://ktsneaker.com/upload/product/4-1845.jpg');
 
 -- Jewelry & Accessory
 insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
