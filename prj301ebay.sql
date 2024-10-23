@@ -546,73 +546,70 @@ INSERT INTO Product (product_id, product_name, product_description, product_pric
 (10, 'Faber-Castell Eraser Pencil', 'An eraser in pencil form for precise erasing.', 1.49, 400, 1, 4.6, 5, ' https://m.media-amazon.com/images/I/712rTU0O-iL._AC_SL1500_.jpg '); 
 	
 
--- Health & Beauty
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'French Fries','Khoai tây chiên là một món ăn được làm từ khoai tây cắt thành những miếng dài và chiên trong dầu nóng. Khoai tây chiên có vị giòn bên ngoài và mềm bên trong, thường được ăn kèm với muối, tương cà hoặc sốt mayonnaise.', 25000, 30, 1, 5, 10, 'https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Hot Dog','Hot Dog, hay còn gọi là xúc xích, là một món ăn vỉa hè nổi tiếng trên khắp thế giới. Nó gồm một cái ổ bánh mềm mịn và xúc xích thơm lừng, được thưởng thức trong những bữa ăn nhanh và dễ dàng ăn bằng tay.', 30000, 20, 1, 5, 0, 'https://i.redd.it/uke6xn3ji5071.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Nachos','Nachos tuyệt vời của chúng tôi là một tác phẩm nghệ thuật đầy màu sắc, với lớp phủ phô mai béo ngậy, ớt cay nồng, và những miếng bánh tortilla giòn tan.', 35000, 30, 1, 5, 0, 'https://www.simplyrecipes.com/thmb/xTCx1mKCjjPYgGasys_JGafuem0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__04__Nachos-LEAD-3-e6dd6cbb61474c9889e1524b3796601e.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Pizza','Bánh pizza ngon tuyệt vời với lớp vỏ giòn, phủ đầy sốt cà chua thơm phức và phô mai béo ngậy. Tận hưởng hòa quyện hương vị từ những lớp nhân thịt và rau sống tươi ngon.', 40000, 30, 1, 5, 15, 'https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Dumplings','Dumplings là loại món ngon có hình dáng giống như viên bi nhỏ. Chúng được làm từ bột và nhân thịt hoặc rau cải tươi mà bạn muốn. Hấp hoặc chiên cùng nước mắm chua ngọt, mmm ngon!', 35000, 20, 1, 5, 0, 'https://www.bhg.com/thmb/eQgTJ-Bl7DUSNIVQvfntHP3ZVOM=/2000x0/filters:no_upscale():strip_icc()/bhg-pork-and-shitake-steamed-dumplings-FmOg5-5J4gv94CccQYTVph-0ef0a4a8987244759154f9e5e1b1819e.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Fish and Chips','Fish and Chips là một món ăn phổ biến ở Anh, gồm cá chiên giòn và khoai tây chiên dài. Cá thường là cá tuyết hoặc cá ngừ, được tẩm bột và chiên trong dầu nóng. Khoai tây được cắt thành miếng dày và chiên giòn bên ngoài, mềm bên trong. Món ăn thường được ăn với muối, dấm, tương cà hoặc sốt tương.', 45000, 30, 1, 5, 5, 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/800px-Fish_and_chips_blackpool.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Fried Calamari','Cá viên chiên giòn là một món ngon với sự pha trộn hoàn hảo giữa sò điệp tươi ngon và lớp bột chiên giòn giòn, tạo nên một trải nghiệm ẩm thực độc đáo và ngon miệng.', 38000, 20, 1, 5, 0, 'https://www.seriouseats.com/thmb/RLHQFr_lp9-HTIWBikzVwu4M17s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__11__20201125-fried-calamari-vicky-wasik-10-9cee3a081e96476b89e29b331d30be61.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Gnocchi','Gnocchi là một món ăn của Ý, được làm từ khoai tây, bột mì và trứng. Gnocchi có hình dạng nhỏ, tròn và xẹp, thường được nấu chín trong nước sôi và ăn kèm với sốt. Gnocchi có vị ngọt, mềm và bùi.', 32000, 3, 0, 5, 0, 'https://www.marthastewart.com/thmb/AdbLwcdFLpcsvW1bah2OuLij55o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/336461-gnocchi-with-tomato-sauce-hero-04-1fe29843b76a4f0ab2ebc226de2723a0.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Hamburger','Bánh mì bò hấp dẫn với bánh mì mềm mịn và miếng bò xông khói thơm bốc. Một bữa ăn xịn sò, phủ nước sốt tuyệt vời!', 30000, 20, 1, 5, 10, 'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/M6HASPARCZHYNN4XTUYT7H6PTE.jpg&w=1440');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Huevos Rancheros','Huevos Rancheros là một món ăn sáng phổ biến ở Mexico, gồm trứng ốp la, sốt cà chua, đậu đen, pho mát và bánh ngô. Món ăn này đậm đà, bổ dưỡng và đầy màu sắc.', 35000, 30, 1, 5, 0, 'https://i0.wp.com/www.aspicyperspective.com/wp-content/uploads/2018/04/best-huevos-rancheros-recipe-25.jpg?resize=800%2C675&ssl=1');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (7, N'Tacos','Tacos là một món ăn truyền thống của Mexico, gồm một chiếc bánh mì dẹt mềm hoặc giòn, nhân thịt, rau, phô mai và sốt. Tacos có nhiều hương vị và cách ăn khác nhau, tùy vào sở thích của bạn.', 38000, 50, 1, 5, 15, 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/1200px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg');
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url)VALUES
+(7, 'Creava  Moisturizing Cream', 'A rich cream to hydrate and nourish your skin.', 19.99, 100, 40, 4.5, 10, 'https://www.bachhoacc.vn/wp-content/uploads/2024/03/kiotviet_7c528aa0bce6462cd77477a7b5b1714e.jpg')
+/* Kem dưỡng ẩm - Một loại kem giàu dưỡng chất giúp cấp ẩm và nuôi dưỡng làn da của bạn. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'Image Vital C Hydrating Anti Aging', 'Serum that reduces the appearance of fine lines and wrinkles.', 29.99, 50, 1, 4.7, 15, 'https://edbeauty.vn/wp-content/uploads/2016/06/serum-duong-giam-kich-ung-image-vital-c-hydrating-anti-aging-serum-1.jpg')
+/* Serum chống lão hóa - Serum giúp giảm sự xuất hiện của các nếp nhăn và vết chân chim. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'EAORON Instant Brightening Face Mask', 'A face mask that brightens and revitalizes dull skin.', 14.99, 80, 1, 4.3, 5, 'https://media.loveitopcdn.com/2064/thumb/mat-na-duong-trang-da-eaoron-instant-brightening-face-mask-100.jpg')
+/* Mặt nạ sáng da - Mặt nạ giúp làm sáng và tái tạo làn da xỉn màu. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'DHC Lip Cream', 'A hydrating lip balm to keep lips soft and smooth.', 5.99, 200, 1, 4.6, 8, 'https://storage.googleapis.com/jagodo/jagodo/2022/12/ee5f6717-son-duong-dhc-11.jpg')
+/* Son dưỡng môi - Một loại son dưỡng giúp giữ cho môi mềm mượt và mịn màng. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'Power Grip Primer', 'Preps skin for a flawless makeup application.', 12.99, 100, 1, 4.4, 10, 'https://www.elfcosmetics.com/dw/image/v2/BBXC_PRD/on/demandware.static/-/Sites-elf-master/default/dwed6a3b79/2021/82846_OpenA_R.jpg?sfrm=png&sw=780&q=90')
+/* Kem lót trang điểm - Chuẩn bị da cho lớp trang điểm hoàn hảo. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'Voluminous Waterproof Mascara', 'Long-lasting, waterproof mascara for voluminous lashes.', 11.99, 70, 1, 4.5, 12, 'https://images-na.ssl-images-amazon.com/images/I/61Gl4+O523L.jpg') 
+/* Mascara chống nước - Mascara lâu trôi, chống nước cho hàng mi dày hơn. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'M.A.C Matte Lipstick', 'A bold, matte lipstick with long-lasting color.', 9.99, 150, 1, 4.2, 20, 'https://bizweb.dktcdn.net/100/375/006/products/807005210082a2dcfb93-1721029251361.jpg?v=1721029255403')
+/* Son môi lì - Son lì táo bạo với màu sắc lâu phai. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'BB Cream', 'All-in-one BB cream that moisturizes, protects, and evens skin tone.', 15.99, 60, 0, 4.6, 15, 'https://down-vn.img.susercontent.com/file/eec556dc88f9979995c56d6e69780865')
+/* Kem BB - Kem đa năng giúp dưỡng ẩm, bảo vệ và làm đều màu da. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'Cerave Facial Cleanser', 'A gentle cleanser that removes dirt and impurities without drying.', 8.99, 120, 0, 4.5, 10, 'https://images-na.ssl-images-amazon.com/images/I/51p9kUSoX2L.jpg')
+/* Sữa rửa mặt - Sữa rửa mặt dịu nhẹ giúp loại bỏ bụi bẩn và tạp chất mà không gây khô da. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(7, 'Neutrogena Sunscreen SPF 50', 'Broad-spectrum sunscreen for daily UV protection.', 13.99, 90, 1, 4.8, 18, 'https://hangnhapmy.us/storage/uploads//UBSv1rvJFGOuajRbwHBwA9iApnnCmhIqcXG4PaLR.jpg')
+/* Kem chống nắng SPF 50 - Kem chống nắng phổ rộng bảo vệ da hàng ngày khỏi tia UV. */
 
--- Clothing
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Caprese Salad','Salad Caprese là một tác phẩm nghệ thuật ẩm thực từ Ý, với cà chua mọng nước, phô mai béo bùi, và lá bạch tuộc thơm mát. Một kết hợp độc đáo, như "bản giao hưởng" của mùa hè!', 35000, 20, 1, 5, 0, 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/07/Caprese-Salad-main-1.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Greek Salad','Salát Hy Lạp là một món ăn nhẹ và tươi mát, gồm rau xanh, cà chua, dưa chuột, hành tím, ô liu đen và phô mai feta. Món salát được nêm với dầu ô liu, giấm và các loại gia vị như oregano và hạt tiêu.', 32000, 30, 1, 5, 10, 'https://cdn.loveandlemons.com/wp-content/uploads/2019/07/greek-salad-2.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Guacamole','Guacamole là một loại sốt xanh mướt, ngon ngọt từ bơ, cà chua, hành, ớt và một chút chanh. Ăn với bánh mì, bánh nachos hoặc salad.', 28000, 35, 1, 5, 0, 'https://www.giallozafferano.com/images/255-25549/Guacamole_1200x800.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Hummus','Hummus là món ăn ngon từ Trung Đông, được làm từ đậu nành mịn màng, hòa quyện cùng tỏi, dầu ô liu và gia vị. Nó có màu nâu nhạt và mùi thơm hấp dẫn.', 25000, 3, 0, 5, 0, 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Caesar Salad','Caesar Salad là một món salad ngon và bổ dưỡng, gồm rau xà lách, bánh mì nướng giòn, phô mai Parmesan và sốt Caesar đặc biệt. Bạn có thể thêm thịt gà, cá hoặc tôm để tăng hương vị. (29 words)', 30000, 50, 1, 5, 10, 'https://cdn.loveandlemons.com/wp-content/uploads/2019/12/caesar-salad-recipe.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Risotto','Món risotto là một món ăn Ý ngon lành, thơm ngậy và nhẹ nhàng, với hạt gạo mềm mịn, ăn kèm với các loại rau và gia vị tuyệt vời.', 38000, 40, 1, 5, 0, 'https://www.allrecipes.com/thmb/854efwMYEwilYjKr0FiF4FkwBvM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/85389-gourmet-mushroom-risotto-DDMFS-4x3-a8a80a8deb064c6a8f15452b808a0258.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Omelette','Omelette là một món ăn được làm từ trứng gà đánh đều, rán chín trên chảo, có thể thêm pho mát, thịt, rau hoặc gia vị tùy ý. Omelette có hình dạng tròn, mềm và thơm ngon.', 26000, 30, 1, 5, 0, 'https://realfood.tesco.com/media/images/1400x919-Tesco-5For15-13273-RainbowOmelette-b3f0c3cc-2f15-40a7-98b1-07af0609f99e-0-1400x919.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Onion Rings','Các chiếc miếng cơm hành được cắt mỏng, chặt vàng giòn từ hành, bọc trong lớp vỏ ngoài giòn tan.', 22000, 20, 1, 5, 15, 'https://th.bing.com/th/id/OIG.tUsUxbWy2qtAgqLtbaxx?pid=ImgGn');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Poutine','Poutine là một món ăn ngon của Canada gồm khoai tây chiên giòn, phủ lớp phô mai nóng béo và sốt ngon tuyệt. Một món ăn đơn giản nhưng vô cùng ngon miệng.', 25000, 30, 1, 5, 0, 'https://www.seasonsandsuppers.ca/wp-content/uploads/2014/01/new-poutine-1.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Club Sandwich','Bánh mì kẹp Club - một tác phẩm nghệ thuật ẩm thực với lớp mỡ tươi ngon, thịt gà thơm lừng, trứng luộc bổ dưỡng và rau sống tươi mát. Hãy thưởng thức hương vị tuyệt vời này!', 35000, 25, 1, 5, 0, 'https://www.foodandwine.com/thmb/tM060YA0Fd0UALCmPQ-5gGWyBqA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Classic-Club-Sandwich-FT-RECIPE0523-99327c9c87214026b9419b949ee13a9c.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Beet Salad','Salad củ dền tươi ngon, cắt nhỏ với hạt óc chó và phô mai feta, chấm với sốt dầu ôliu và chanh.', 28000, 30, 1, 5, 5, 'https://cdn.loveandlemons.com/wp-content/uploads/2021/11/beet-salad-1.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Cheese Plate','Dĩa Phô Mai - Một dĩa gồm nhiều loại phô mai ngon, béo, mềm mịn kết hợp với bánh mì giòn tan và những thành phần khác giúp kích thích vị giác của bạn.', 32000, 50, 0, 5, 5, 'https://www.barleyandsage.com/wp-content/uploads/2021/08/summer-cheeseboard-1200x1200-1.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Clam Chowder','Clam Chowder là một món súp béo ngậy với nhiều sò huyết, khoai tây, cà rốt và hành tây. Món này có vị ngọt của sò, mặn của nước biển và thơm của kem. Clam Chowder thường được ăn với bánh mì nướng hoặc bánh quy bơ.', 26000, 10, 1, 5, 0, 'https://s23209.pcdn.co/wp-content/uploads/2019/10/Easy-Clam-ChowderIMG_1064.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Croque Madame','Croque Madame là một món ăn đơn giản nhưng ngon miệng, gồm một lát bánh mì nướng, phủ phô mai và thịt nguội, và một quả trứng ốp la trên đỉnh. Bạn có thể ăn nó với salad hoặc khoai tây chiên.', 32000, 20, 0, 5, 5, 'https://hips.hearstapps.com/hmg-prod/images/190417-croque-monsieur-horizontal-476-1556565130.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Edamame','Edamame là món đậu gốc Đông Á, rất phổ biến trong ẩm thực Nhật Bản. Nhìn qua, nó giống như những trái đậu nhỏ xinh, màu xanh bóng. Ăn vào sẽ cảm nhận được vị ngọt tự nhiên và nhẹ nhàng, rất thích hợp để ăn kèm với các món khác.', 18000, 30, 1, 5, 0, 'https://peasandcrayons.com/wp-content/uploads/2018/02/quick-easy-spicy-sambal-edamame-recipe-2.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Eggs Benedict','Trứng Benedict là một món ăn ngon giòn và lạ miệng, với trứng chần ở trên lớp thịt mềm, béo ngậy. Món này tuyệt để bắt đầu một ngày tuyệt vời!', 32000, 20, 1, 5, 15, 'https://www.foodandwine.com/thmb/j6Ak6jECu0fdly1XFHsp4zZM8gQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Eggs-Benedict-FT-RECIPE0123-4f5f2f2544464dc89a667b5d960603b4.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Foie Gras','Foie Gras là một món ăn được làm từ gan ngỗng hoặc vịt đã được nuôi đặc biệt. Gan có màu vàng nhạt, mềm và béo. Foie Gras có thể được nướng, hấp, chiên hoặc làm mứt. Món ăn có vị ngọt, béo và thơm.', 75000, 15, 1, 5, 0, 'https://upload.wikimedia.org/wikipedia/commons/8/82/Foie_gras_en_cocotte.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Grilled Cheese Sandwich','Bánh sandwich pho mát nướng là món ăn ngon miệng có kết cấu mềm mịn, hấp dẫn với lớp pho mát tan chảy bên trong và bề mặt giòn tan.', 25000, 20, 1, 5, 20, 'https://static01.nyt.com/images/2023/02/28/multimedia/ep-air-fryer-grilled-cheese-vpmf/ep-air-fryer-grilled-cheese-vpmf-mediumSquareAt3X.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Ice Cream','Kem là một món tráng miệng thơm ngon và lạ miệng, với hương vị ngọt ngào và mịn màng của kem được làm từ sữa và đá, cùng với nhiều loại topping thích hợp cho mọi sở thích.', 15000, 50, 0, 5, 0, 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWNlX2NyZWFtfGVufDB8fDB8fHww&w=1000&q=80');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Paella','Paella là một món ăn Tây Ban Nha hấp dẫn gồm nhiều thành phần như cơm, tôm, cá, gà và các loại rau. Hương vị đậm đà, màu sắc bắt mắt, rất ngon miệng.', 42000, 10, 1, 5, 0, 'https://www.allrecipes.com/thmb/PdwNPwZiNXr9cw8W6WQacCl6i98=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/84137-easy-paella-DDMFS-4x3-08712e61e7dc453d94673f65f9eca7d2.jpg');
-insert into Product (product_type_id, product_name, product_description, product_price, product_limit, product_status, discount_price, product_img_url)    
-VALUES (8, N'Waffles','Waffles là một loại bánh ngọt xốp, giòn, nóng hổi với hình dáng lưới hoặc ô vuông. Thường được ăn với siro, kem và hoa quả.', 18000, 20, 0, 5, 15, 'https://www.allrecipes.com/thmb/imrP1HYi5pu7j1en1_TI-Kcnzt4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20513-classic-waffles-mfs-025-4x3-81c0f0ace44d480ca69dd5f2c949731a.jpg');
+--Clothes
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Classic White T-Shirt', 'A soft, breathable cotton T-shirt, perfect for everyday wear.', 9.99, 150, 1, 4.5, 10, 'https://www.taylorstitch.com/cdn/shop/products/The_Organic_Cotton_Tee_VintageWhite_Front.jpg?v=1680906500')
+/* Áo thun trắng cổ điển - Áo thun cotton mềm mại, thoáng khí, phù hợp cho trang phục hàng ngày. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Denim Jacket', 'Stylish denim jacket with a classic fit and button closure.', 39.99, 80, 1, 4.7, 15, 'https://media.jag.com.au/image/upload/c_fill,f_auto,h_785,q_auto,w_628/v1699506919/media/image/jms201071_fadedvintage_a.jpg') 
+/* Áo khoác denim - Áo khoác denim thời trang với kiểu dáng cổ điển và cài nút. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Black Skinny Jeans', 'Stretchy skinny jeans for a sleek, modern look.', 29.99, 100, 1, 4.6, 12, 'https://www.hudsonjeans.com/cdn/shop/products/WM422DWI_BLACK_l.jpg?v=1681220955') 
+/* Quần jeans ôm đen - Quần jeans ôm co giãn cho vẻ ngoài hiện đại, thon gọn. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Floral Summer Dress', 'Lightweight, floral dress perfect for summer days.', 24.99, 60, 1, 4.4, 20, 'https://www.bannsboutique.com/cdn/shop/files/retro-floral-a-line-dress-b-ann-s-boutique-llc-3_1024x1024.jpg?v=1711051237') 
+/* Váy mùa hè họa tiết hoa - Váy nhẹ nhàng, họa tiết hoa, phù hợp cho những ngày hè. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url)VALUES
+(8, 'Hooded Sweatshirt', 'Cozy hooded sweatshirt with a soft fleece lining.', 19.99, 120, 1, 4.5, 10, 'https://thedarkgallery.vn/wp-content/uploads/2023/12/bordeauxhooded.jpg') 
+/* Áo hoodie - Áo hoodie ấm áp với lớp lót nỉ mềm mại. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Plaid Button-Up Shirt', 'A classic plaid shirt with a button-up front.', 22.99, 90, 1, 4.3, 8, 'https://www.westportbigandtall.com/cdn/shop/files/42431_MULT_1500x.jpg?v=1706812689')
+/* Áo sơ mi kẻ sọc - Áo sơ mi kẻ cổ điển với hàng cúc phía trước. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Cargo Shorts', 'Durable cargo shorts with multiple pockets for convenience.', 18.99, 100, 0, 4.2, 5, 'https://product.hstatic.net/1000277171/product/z5646752466915_86e90bd15c4170d9915127a778204000_b25475dd1ae547d4949f3a8c0a00a275_master.jpg')
+/* Quần short túi hộp - Quần short túi hộp bền bỉ với nhiều túi tiện lợi. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Athletic Joggers', 'Comfortable joggers designed for workouts or casual wear.', 21.99, 110, 0, 4.6, 15, 'https://thoitrangbigsize.vn/wp-content/uploads/2024/06/2-10.jpg')
+/* Quần jogger thể thao - Quần jogger thoải mái, thích hợp cho tập luyện hoặc mặc thường ngày. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Wool Coat', 'Elegant wool coat perfect for keeping warm during winter.', 89.99, 40, 1, 4.8, 25, 'https://marimekko.vn/cdn/shop/files/MM_092352_800_5_4117ed02-203e-4944-a585-c0981bd248a1.jpg?v=1709198897&width=1445')
+/* Áo khoác len - Áo khoác len thanh lịch, hoàn hảo để giữ ấm trong mùa đông. */
+INSERT INTO Product (product_id, product_name, product_description, product_price, product_limit, product_status, product_rate, discount_percent, product_img_url) VALUES
+(8, 'Leather Biker Jacket', 'A stylish leather jacket with a classic biker design, perfect for a cool, edgy look.', 99.99, 50, 1, 4.7, 20, 'https://www.johnelliott.com/cdn/shop/products/LEATHER_MOTO_JACKET_BLACK_FLAT.jpg?v=1696288948');
+/* Áo khoác da biker - Áo khoác da phong cách với thiết kế biker cổ điển, hoàn hảo cho vẻ ngoài cá tính, chất ngầu. */
+
+
 
 -- Payment methods
 insert into PaymentMethod (payment_method) values (N'Credit card');
